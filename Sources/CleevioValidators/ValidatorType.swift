@@ -84,7 +84,7 @@ public extension ValidatedError {
     var isValidated: Bool { false }
 }
 
-extension Optional<ValidatedError> {
+public extension Optional<ValidatedError> {
     /// A boolean value indicating whether the error represents a successfully validated state.
     var isValidated: Bool {
         self?.isValidated ?? true
