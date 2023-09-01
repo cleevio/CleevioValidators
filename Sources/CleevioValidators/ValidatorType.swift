@@ -14,7 +14,7 @@ public protocol ValidatorType<ValidatorError> {
     /**
      The error type used by the validator to denote validation failures.
     */
-    associatedtype ValidatorError: LocalizedError, Equatable
+    associatedtype ValidatorError: ValidatedError
     
     /**
      The type of content that is being validated.
@@ -68,4 +68,25 @@ public protocol ValidatorType<ValidatorError> {
      ```
      */
     func validate(content: ValidatedContent) -> ValidatorError?
+}
+
+/**
+ A protocol representing an error type for validation failures.
+ 
+ Types conforming to `ValidatedError` are used to denote validation failures in the context of the `ValidatorType` protocol.
+ */
+public protocol ValidatedError: LocalizedError, Equatable {
+    /// A boolean value indicating whether the error represents a successfully validated state.
+    var isValidated: Bool { get }
+}
+
+public extension ValidatedError {
+    var isValidated: Bool { false }
+}
+
+extension Optional<ValidatedError> {
+    /// A boolean value indicating whether the error represents a successfully validated state.
+    var isValidated: Bool {
+        self?.isValidated ?? true
+    }
 }

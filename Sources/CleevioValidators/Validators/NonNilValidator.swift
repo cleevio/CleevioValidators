@@ -8,7 +8,7 @@ import Foundation
 public struct NonNilValidator: ValidatorType {
     
     /// An error enum for easy handling of validation errors.
-    public enum ValidatorError: LocalizedError {
+    public enum ValidatorError: ValidatedError {
         
         /// Validation failed: the content is nil.
         case empty

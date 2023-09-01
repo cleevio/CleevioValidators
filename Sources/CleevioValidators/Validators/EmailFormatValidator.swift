@@ -8,7 +8,7 @@ import Foundation
 public struct EmailFormatValidator: ValidatorType {
 
     /// An error enum for easy handling of validation errors.
-    public enum ValidatorError: LocalizedError {
+    public enum ValidatorError: ValidatedError {
 
         /// Validation failed: email is empty.
         case empty

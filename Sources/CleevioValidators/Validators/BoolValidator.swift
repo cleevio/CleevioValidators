@@ -8,7 +8,7 @@ import Foundation
 public struct BoolValidator: ValidatorType {
 
     /// An error enum for easy handling of validation errors.
-    public enum ValidatorError: LocalizedError {
+    public enum ValidatorError: ValidatedError {
         
         /// Validation failed: boolean value is different from the expected value.
         case differentToExpectedValue

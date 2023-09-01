@@ -8,7 +8,7 @@ import Foundation
 public struct MinimumCollectionCountValidator<CollectionType: Collection>: ValidatorType {
     
     /// An error enum for easy handling of validation errors.
-    public enum ValidatorError: LocalizedError {
+    public enum ValidatorError: ValidatedError {
         
         /// Validation failed: the collection does not have enough elements.
         case notLongEnough
