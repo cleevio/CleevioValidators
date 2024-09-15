@@ -1,3 +1,8 @@
+<p align="center">
+<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat"></a>
+<a href="blob/main/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
+</p>
+
 # CleevioValidators
 
 CleevioValidators is a Swift package that provides a collection of reusable validators to validate various types of content and the validator interface.
@@ -23,13 +28,13 @@ The library is fully documented and fully covered by tests.
 ### Swift Package Manager
 Swift Package Manager is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
 
-Xcode 11+ is required to build Forestry iOS Logger using Swift Package Manager.
+Xcode 11+ is required to build CleevioValidators iOS Logger using Swift Package Manager.
 
-To integrate Forestry iOS Logger into your Xcode project using Swift Package Manager, add it to the dependencies value of your Package.swift:
+To integrate CleevioValidators into your Xcode project using Swift Package Manager, add it to the dependencies value of your Package.swift:
 
 ```
 dependencies: [
-    .package(url: "git@gitlab.cleevio.cz:cleevio-dev-ios/CleevioValidators.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/cleevio/CleevioValidators.git", .upToNextMajor(from: "0.2.0"))
 ]
 ```
 
@@ -49,4 +54,4 @@ If you'd like to contribute, create a new branch for your work. Once you're fini
 
 The good guys from [Cleevio](https://cleevio.com).
 
-![Cleevio logo](cleevioLogo.jpg)
+![Cleevio logo](assets/cleevio.png)
