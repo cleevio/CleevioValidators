@@ -5,7 +5,7 @@
 import Foundation
 
 /// Validates that the provided content is not nil.
-public struct NonNilValidator: ValidatorType {
+public struct NonNilValidator: ValidatorType, Sendable {
     
     /// An error enum for easy handling of validation errors.
     public enum ValidatorError: ValidatedError {
