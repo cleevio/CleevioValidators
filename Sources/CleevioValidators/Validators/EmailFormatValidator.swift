@@ -5,7 +5,7 @@
 import Foundation
 
 /// Validates an email address to ensure it is in a correct format.
-public struct EmailFormatValidator: ValidatorType {
+public struct EmailFormatValidator: ValidatorType, Sendable {
 
     /// An error enum for easy handling of validation errors.
     public enum ValidatorError: ValidatedError {

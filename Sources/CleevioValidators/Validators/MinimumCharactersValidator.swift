@@ -5,7 +5,7 @@
 import Foundation
 
 /// Validates text to ensure that it is at least a certain number of characters long.
-public struct MinimumCharactersValidator: ValidatorType {
+public struct MinimumCharactersValidator: ValidatorType, Sendable {
     
     /// An error enum for easy handling of validation errors.
     public enum ValidatorError: ValidatedError {

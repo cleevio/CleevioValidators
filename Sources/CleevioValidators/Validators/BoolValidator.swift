@@ -5,7 +5,7 @@
 import Foundation
 
 /// Validates a boolean value to ensure it matches an expected value.
-public struct BoolValidator: ValidatorType {
+public struct BoolValidator: ValidatorType, Sendable {
 
     /// An error enum for easy handling of validation errors.
     public enum ValidatorError: ValidatedError {

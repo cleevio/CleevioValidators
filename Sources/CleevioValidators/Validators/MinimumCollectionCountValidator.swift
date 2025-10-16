@@ -5,7 +5,7 @@
 import Foundation
 
 /// Validates a collection to ensure it has a minimum number of elements.
-public struct MinimumCollectionCountValidator<CollectionType: Collection>: ValidatorType {
+public struct MinimumCollectionCountValidator<CollectionType: Collection>: ValidatorType, Sendable {
     
     /// An error enum for easy handling of validation errors.
     public enum ValidatorError: ValidatedError {
