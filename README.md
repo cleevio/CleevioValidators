@@ -16,6 +16,7 @@ CleevioValidators includes the following validators:
 - `MinimumCharactersValidator`: validates if a string has a minimum number of characters.
 - `MinimumCollectionCountValidator`: validates if a collection has a minimum number of items.
 - `NonNilValidator`: validates if a value is not nil.
+- `ZIPCodeValidator`: validates if a value is a valid ZIP code format
 
 All validators implement the `ValidatorType` protocol, which defines a `validate` method that takes a value of any type and returns am optional error indicating whether the value is valid or not.
 
@@ -34,7 +35,7 @@ To integrate CleevioValidators into your Xcode project using Swift Package Manag
 
 ```
 dependencies: [
-    .package(url: "https://github.com/cleevio/CleevioValidators.git", .upToNextMajor(from: "0.2.0"))
+    .package(url: "https://github.com/cleevio/CleevioValidators.git", .upToNextMajor(from: "0.3.0"))
 ]
 ```
 
